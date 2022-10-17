@@ -1,0 +1,471 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  /*
+      Blue: hsl(207, 90%, 61%)
+      Purple: hsl(250, 66%, 75%)
+      Pink: hsl(356, 66%, 75%)
+      Teal: hsl(174, 63%, 62%)
+  */
+
+  --hue: 207;
+  --sat: 90%;
+  --lig: 61%;
+  --first-color: hsl(var(--hue), var(--sat), var(--lig));
+  --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+  --title-color: hsl(var(--hue), 12%, 15%);
+  --text-color: hsl(var(--hue), 12%, 45%);
+  --text-color-light: hsl(var(--hue), 8%, 75%);
+  --text-color-lighten: hsl(var(--hue), 8%, 92%);
+  --body-color: hsl(var(--hue), 100%, 99%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.6rem;
+  --normal-font-size: 1.5rem;
+  --small-font-size: 1.3rem;
+  --smaller-font-size: 1.2rem;
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --h2-font-size: 2.4rem;
+    --h3-font-size: 2rem;
+    --normal-font-size: 1.6rem;
+    --small-font-size: 1.4rem;
+    --smaller-font-size: 1.3rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .3s; /* For animation dark mode */
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+i {
+  display: block;
+  font-size: 2rem;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.wrapper {
+  max-width: 968px;
+  margin-inline: 2.4rem;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== PROFILE ===============*/
+.profile {
+  position: relative;
+}
+
+.profile .wrapper {
+  padding-top: 3.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.profile .change-theme {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.profile .change-theme:hover {
+  color: var(--first-color);
+}
+
+/*=============== INFO ===============*/
+
+.profile .profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile .profile-info .border-pic {
+  width: 11.5rem;
+  height: 11.5rem;
+  border: 3.5px solid var(--first-color);
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+}
+
+.profile .profile-info .border-pic .container-pic {
+  overflow: hidden;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+
+  background: linear-gradient(180deg, hsla(var(--hue), var(--sat), var(--lig), 1) 0%, hsla(var(--hue), var(--sat), var(--lig), .2) 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.profile .profile-info .border-pic .container-pic img {
+  display: block;
+  width: 11rem;
+  object-position: 0 2rem;
+}
+
+.profile .profile-info h2.name {
+  margin-top: 1.2rem;
+  font-size: var(--h2-font-size);
+}
+
+.profile .profile-info h3.profession {
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.profile .profile-info .social-icons {
+  margin-top: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.profile .profile-info .social-icon {
+  color: var(--title-color);
+  font-size: 2rem;
+  transition: .3s;
+}
+
+.profile .profile-info .social-icon:hover {
+  color:  var(--first-color);
+}
+
+/*=============== DATA ===============*/
+
+.profile .profile-data {
+  text-align: center;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .profile-data .data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.profile .profile-data .data h3 {
+  font-size: var(--normal-font-size);
+}
+
+.profile .profile-data .data p {
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+
+/*=============== BUTTONS ===============*/
+
+.profile .profile-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.profile .profile-buttons .button {
+  background-color: var(--first-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.8rem 2.4rem;
+
+  color: #fff;
+
+
+  border-radius: 0.8rem;
+  transition: 0.3s;
+  box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+}
+
+.profile .profile-buttons .button:hover {
+  background: var(--first-color-alt);
+}
+
+.profile .profile-buttons .button i {
+
+}
+
+.profile .profile-buttons .contact-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.profile .profile-buttons .contact-button {
+  background-color: var(--text-color-lighten);
+  color: var(--title-color);
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.profile .profile-buttons .contact-button:hover {
+  background-color: var(--text-color-light);
+}
+
+.profile .profile-buttons .contact-button i {
+
+}
+
+/*=============== MAIN ===============*/
+
+.main {
+  
+}
+
+.main .wrapper {
+  padding-top: 3.2rem;
+}
+
+.main .toggle-buttons {
+  background: var(--text-color-lighten);
+  margin-inline: auto;
+  padding: 0.6rem;
+  border-radius: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.main .toggle-button {
+  width: 100%;
+  border: none;
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+}
+
+.main .toggle-button:hover,
+.main .toggle-button:active {
+  background: var(--body-color);
+}
+
+/*=============== PROJECTS ===============*/
+
+.main .projects {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2.4rem;
+}
+
+.main .projects .card {
+  position: relative;
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.main .projects .card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.main .projects .card .content-container {
+  /* display: none; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+
+  padding: 2.4rem 2rem;
+
+  background: linear-gradient(180deg, hsla(var(--hue), 24%, 40%, .3) 0%, hsla(var(--hue), 24%, 4%, 1) 95%);
+
+  display: grid;
+  align-items: flex-end;
+
+  transition: .3s;
+}
+
+.main .projects .card:hover .content-container {
+  bottom: 0;
+}
+
+.main .projects .card .content-container .content {
+  
+}
+
+.main .projects .card .content-container .content span {
+  font-size: var(--smaller-font-size);
+  color: #fff;
+}
+
+.main .projects .card .content-container .content h3 {
+  font-size: var(--h3-font-size);
+  color: #fff;
+  font-weight: 600;
+}
+
+.main .projects .card .content-container .content .project-button {
+  background-color: var(--first-color);
+  margin-top: 1.2rem;
+
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+
+/*=============== SKILLS ===============*/
+
+.main .skills {
+  display: none;
+}
+
+.main .skills .skills-area {
+
+}
+
+.main .skills .skills-area h3 {
+
+}
+
+.main .skills .skills-area .skills-box {
+
+}
+
+.main .skills .skills-area .skills-box .group {
+
+}
+
+.main .skills .skills-area .skills-box .group .skill {
+
+}
+
+.main .skills .skills-area .skills-box .group .skill i {
+
+}
+
+.main .skills .skills-area .skills-box .group .skill h4 {
+
+}
+
+.main .skills .skills-area .skills-box .group .skill span {
+
+}
+
+/* Hide and show projects & skills */
+
+
+/* Activate toggle buttons */
+
+
+/*=============== FOOTER ===============*/
+
+footer {
+  
+}
+
+footer .wrapper {
+  padding-block: 4rem 3.2rem;
+  text-align: center;
+}
+
+footer .wrapper span {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (min-width: 576px) {
+  .toggle-buttons {
+    max-width: 33.2rem;
+  }
+  
+  .main .projects {
+    grid-template-columns: 33.2rem;
+    justify-content: center;
+  }
+
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .main .projects {
+    grid-template-columns: repeat(2, 33.2rem);
+  }
+}
+
+/* For large devices */
