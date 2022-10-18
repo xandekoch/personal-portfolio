@@ -88,6 +88,24 @@ i {
 
 /*=============== THEME ===============*/
 
+body.dark {
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  --body-color: hsl(var(--hue), 40%, 8%);
+  --container-color: hsl(var(--hue), 24%, 12%);
+}
+
+body.dark .profile .profile-buttons .contact-button,
+body.dark .main .toggle-buttons {
+  background: var(--container-color);
+}
+body.dark .profile .profile-buttons .contact-button:hover {
+background-color: hsl(var(--hue), 24%, 16%);
+}
+
+body.dark .profile .change-theme::before {
+  content: "\f1bf";
+}
 
 /*========== Variables Dark theme ==========*/
 
@@ -101,7 +119,8 @@ i {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .wrapper {
   max-width: 968px;
-  margin-inline: 2.4rem;
+  padding-inline: 2.4rem;
+  /* width: min(112rem, 100%); */
   margin: auto;
 }
 
@@ -116,12 +135,12 @@ i {
 }
 
 .profile .wrapper {
-  padding-top: 3.5rem;
+  padding-top: 5.6rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
+  gap: 3.2rem;
 }
 
 .profile .change-theme {
@@ -310,6 +329,8 @@ i {
   text-align: center;
   color: var(--title-color);
   font-size: var(--small-font-size);
+
+  cursor: pointer;
 }
 
 .main .toggle-button:hover,
@@ -386,51 +407,80 @@ i {
 /*=============== SKILLS ===============*/
 
 .main .skills {
-  display: none;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+
 }
 
 .main .skills .skills-area {
-
+  
 }
 
 .main .skills .skills-area h3 {
-
+  font-size: var(--h3-font-size);
+  text-align: center;
+  color: var(--title-color);
 }
 
 .main .skills .skills-area .skills-box {
-
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4.8rem;
 }
 
 .main .skills .skills-area .skills-box .group {
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
 }
 
 .main .skills .skills-area .skills-box .group .skill {
-
+  display: grid;
+  grid-template-areas: 
+      'A B'
+      'A C';
+  column-gap: 0.8rem;
 }
 
 .main .skills .skills-area .skills-box .group .skill i {
-
+  font-size: 1.6rem;
+  color: var(--first-color);
+  grid-area: A;
 }
 
 .main .skills .skills-area .skills-box .group .skill h4 {
-
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--title-color);
 }
 
 .main .skills .skills-area .skills-box .group .skill span {
-
+  font-size: var(--smaller-font-size);
 }
 
-/* Hide and show projects & skills */
+/*=============== alternateSections ===============*/
 
+.main.projectsActive .toggle-button:first-child,
+.main.skillsActive .toggle-button:last-child {
+  background: var(--body-color);
+}
 
-/* Activate toggle buttons */
-
+.main.projectsActive .skills,
+.main.skillsActive .projects {
+  display: none;
+}
 
 /*=============== FOOTER ===============*/
 
 footer {
-  
+  position: relative;
 }
 
 footer .wrapper {
@@ -466,6 +516,22 @@ footer .wrapper span {
   .main .projects {
     grid-template-columns: repeat(2, 33.2rem);
   }
+
+  .main .skills {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8rem;
+  }
+
+  .main .skills .skills-area .skills-box {
+    margin-top: 4rem;
+  }
 }
 
 /* For large devices */
+@media screen and (min-width: 1024px) {
+  .main .projects {
+    gap: 3.2rem 4.8rem;
+  }
+}

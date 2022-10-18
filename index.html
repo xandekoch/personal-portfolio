@@ -15,11 +15,11 @@
 
         <title>Mini portfolio website - Bedimcode</title>
     </head>
-    <body>
+    <body id="theme" class="">
         <!--=============== PROFILE ===============-->
         <section class="profile">
             <div class="wrapper">
-                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <i class="ri-moon-line change-theme" id="theme-button" onclick="changeTheme()"></i>
                 
                 <div class="profile-info">
                     <div class="border-pic">
@@ -71,11 +71,11 @@
                     </a>
 
                     <div class="contact-buttons">
-                        <a class="contact-button" href="https://wa.me/21998376234">
+                        <a target="_blank" class="contact-button" href="https://wa.me/21998376234">
                             <i class="ri-whatsapp-line"></i>
                         </a>
 
-                        <a class="contact-button" href="mailto:xandekoch.work@gmail.com">
+                        <a target="_blank" class="contact-button" href="mailto:xandekoch.work@gmail.com">
                             <i class="ri-mail-line"></i>
                         </a>
                     </div>
@@ -84,18 +84,18 @@
         </section>
 
         <!--=============== MAIN ===============-->
-        <section class="main">
+        <section id="alternateSections" class="main projectsActive">
             <div class="wrapper">
                 <div class="toggle-buttons">
-                    <div class="toggle-button">
+                    <div onclick="activeProjects()" class="toggle-button">
                         Projects
                     </div>
-                    <div class="toggle-button">
+                    <div onclick="activeSkills()" class="toggle-button">
                         Skills
                     </div>
                 </div>
 
-                <div class="projects">
+                <div id="projects" class="projects">
                     <div class="card">
                         <img src="./assets/img/seja-influencer-project.jpg" alt="">
                         <div class="content-container">
@@ -176,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="skills">
+                <div id="skills" class="skills">
                     <div class="skills-area">
                         <h3>Frontend Developer</h3>
                         <div class="skills-box">
