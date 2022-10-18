@@ -17,10 +17,10 @@ See the website online: https://xandekoch.github.io/personal-portfolio/
 
 ## Preview
 Desktop:
-![App Screenshot](./assets/gif/desktop.png)
+![App Screenshot](./assets/gif/desktop.gif)
 
 Mobile:
-![App Screenshot](./assets/gif/mobile.png)
+![App Screenshot](./assets/gif/mobile.gif)
 
 
 ## Roadmap
