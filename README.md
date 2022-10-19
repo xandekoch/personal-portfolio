@@ -25,8 +25,6 @@ Mobile:
 
 ## Roadmap
 
-- Add ScrollRevealJS
-
 - Rebuild it with React
 
 - Implement a backend system
