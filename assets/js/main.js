@@ -23,5 +23,19 @@ function changeTheme() {
     }
 }
 
-
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+})
+
+sr.reveal('.border-pic')
+sr.reveal('.name', {delay: 500})
+sr.reveal('.profession', {delay: 600})
+sr.reveal('.social-icons', {delay: 700})
+sr.reveal('.profile-data', {interval:100, delay: 700})
+sr.reveal('.profile-buttons', {delay: 800})
+sr.reveal('.toggle-buttons', {delay: 900})
+sr.reveal('.projects-skills', {delay: 1000})
