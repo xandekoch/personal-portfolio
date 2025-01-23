@@ -1,273 +1,248 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="./assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Alexandre Koch Portfolio</title>
-    </head>
-    <body id="theme" class="">
-        <!--=============== PROFILE ===============-->
-        <section class="profile">
-            <div class="wrapper">
-                <i class="ri-moon-line change-theme" id="theme-button" onclick="changeTheme()"></i>
-                
-                <div class="profile-info">
-                    <div class="border-pic">
-                        <div class="container-pic">
-                            <img src="./assets/img/profile2.png" alt="">
-                        </div>
-                    </div>
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
 
-                    <h2 id="name" class="name">Alexandre Koch</h2>
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-                    <h3 class="profession">Web developer</h3>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/xandekoch" target="_blank" class="social-icon">
-                            <i class="ri-instagram-line"></i>
-                        </a>
+    <title>Alexandre Koch Portfolio</title>
+</head>
 
-                        <a href="https://www.linkedin.com/in/alexandre-koch-8643571b2/" target="_blank" class="social-icon">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
+<body id="theme" class="">
+    <!--=============== PROFILE ===============-->
+    <section class="profile">
+        <div class="wrapper">
+            <i class="ri-moon-line change-theme" id="theme-button" onclick="changeTheme()"></i>
 
-                        <a href="https://github.com/xandekoch" target="_blank" class="social-icon">
-                            <i class="ri-github-line"></i>
-                        </a>
+            <div class="profile-info">
+                <div class="border-pic">
+                    <div class="container-pic">
+                        <img src="./assets/img/profile2.png" alt="">
                     </div>
                 </div>
 
-                <div class="profile-data">
-                    <div class="data">
-                        <h3>2</h3>
-                        <p>Years of<br>work</p>
-                    </div>
+                <h2 id="name" class="name">Alexandre Koch</h2>
 
-                    <div class="data">
-                        <h3>+10</h3>
-                        <p>Completed<br>projects</p>
-                    </div>
+                <h3 class="profession">Software Engineer</h3>
 
-                    <div class="data">
-                        <h3>20</h3>
-                        <p>Satisfied<br>customers</p>
-                    </div>
-                </div>
-
-                <div class="profile-buttons">
-                    <a class="button" download href="./assets/pdf/alexandre-koch-resume.pdf">
-                        Download CV
-                        <i class="ri-download-line"></i>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/xandekoch" target="_blank" class="social-icon">
+                        <i class="ri-instagram-line"></i>
                     </a>
 
-                    <div class="contact-buttons">
-                        <a target="_blank" class="contact-button" href="https://wa.me/21998376234">
-                            <i class="ri-whatsapp-line"></i>
-                        </a>
+                    <a href="https://www.linkedin.com/in/alexandre-koch-8643571b2/" target="_blank" class="social-icon">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
 
-                        <a target="_blank" class="contact-button" href="mailto:xandekoch.work@gmail.com">
-                            <i class="ri-mail-line"></i>
-                        </a>
-                    </div>
+                    <a href="https://github.com/xandekoch" target="_blank" class="social-icon">
+                        <i class="ri-github-line"></i>
+                    </a>
                 </div>
             </div>
-        </section>
 
-        <!--=============== MAIN ===============-->
-        <section id="alternateSections" class="main projectsActive">
-            <div class="wrapper">
-                <div class="toggle-buttons">
-                    <div onclick="activeProjects()" class="toggle-button">
-                        Projects
-                    </div>
-                    <div onclick="activeSkills()" class="toggle-button">
-                        Skills
-                    </div>
+            <div class="profile-data">
+                <div class="data">
+                    <h3>5</h3>
+                    <p>Years of<br>work</p>
                 </div>
 
-                <div class="projects-skills">
-                    <div id="projects" class="projects">
-                        <div class="card">
-                            <img src="./assets/img/seja-influencer-project.jpg" alt="">
-                            <div class="content-container">
-                                <div class="content">
-                                    <span>Web</span>
-                                    <h3>Seja Influencer
-                                    </h3>
-                                    <a target="_blank" href="https://xandekoch.github.io/seja-influencer-website/" class="project-button">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="data">
+                    <h3>+40</h3>
+                    <p>Completed<br>projects</p>
+                </div>
 
-                        <div class="card">
-                            <img src="./assets/img/elitas-travel-project2.jpg" alt="">
-                            <div class="content-container">
-                                <div class="content">
-                                    <span>Web</span>
-                                    <h3>Elitas Travel</h3>
-                                    <a target="_blank" href="https://xandekoch.github.io/elitas-travel-website/" class="project-button">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="data">
+                    <h3>17</h3>
+                    <p>Satisfied<br>customers</p>
+                </div>
+            </div>
 
-                        <div class="card">
-                            <img src="./assets/img/the-blog-project.jpg" alt="">
-                            <div class="content-container">
-                                <div class="content">
-                                    <span>Web</span>
-                                    <h3>The Blog</h3>
-                                    <a target="_blank" href="https://xandekoch.github.io/the-blog/" class="project-button">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="profile-buttons">
+                <a class="button" download href="./assets/pdf/CV - FullStack Developer - Alexandre Koch.pdf">
+                    Download CV
+                    <i class="ri-download-line"></i>
+                </a>
 
-                        <div class="card">
-                            <img src="./assets/img/doctor-care-project.jpg" alt="">
-                            <div class="content-container">
-                                <div class="content">
-                                    <span>Web</span>
-                                    <h3>Doctor Care</h3>
-                                    <a target="_blank" href="https://xandekoch.github.io/doctor-care/" class="project-button">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="contact-buttons">
+                    <a target="_blank" class="contact-button" href="https://wa.me/21977405775">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
 
-                        <div class="card">
-                            <img src="./assets/img/submarine-nfts-project.jpg" alt="">
-                            <div class="content-container">
-                                <div class="content">
-                                    <span>Web</span>
-                                    <h3>Submarine NFTs Marketplace Dashboard</h3>
-                                    <a target="_blank" href="https://xandekoch.github.io/submarine-nfts-marketplace-dashboard/" class="project-button">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                    <a target="_blank" class="contact-button" href="mailto:xandekoch.work@gmail.com">
+                        <i class="ri-mail-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="card">
-                            <img src="./assets/img/rocket-nfts-project.jpg" alt="">
-                            <div class="content-container">
-                                <div class="content">
-                                    <span>Web</span>
-                                    <h3>Rocket NFTs</h3>
-                                    <a target="_blank" href="https://xandekoch.github.io/rocket-nfts-website/" class="project-button">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
+    <!--=============== MAIN ===============-->
+    <section id="alternateSections" class="main projectsActive">
+        <div class="wrapper">
+            <div class="toggle-buttons">
+                <div onclick="activeProjects()" class="toggle-button">
+                    Projects
+                </div>
+                <div onclick="activeSkills()" class="toggle-button">
+                    Skills
+                </div>
+            </div>
+
+            <div class="projects-skills">
+                <div id="projects" class="projects">
+                    <div class="card">
+                        <img src="./assets/img/seja-influencer-project.jpg" alt="">
+                        <div class="content-container">
+                            <div class="content">
+                                <span>Web</span>
+                                <h3>Seja Influencer
+                                </h3>
+                                <a target="_blank" href="https://xandekoch.github.io/seja-influencer-website/"
+                                    class="project-button">
+                                    <i class="ri-link"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div id="skills" class="skills">
-                        <div class="skills-area">
-                            <h3>Frontend Developer</h3>
-                            <div class="skills-box">
-                                <div class="group">
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>HTML</h4>
-                                        <span>Advanced</span>
-                                    </div>
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>CSS</h4>
-                                        <span>Advanced</span>
-                                    </div>
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>JavaScript</h4>
-                                        <span>Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="group">
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>ReactJS</h4>
-                                        <span>Intermediate</span>
-                                    </div>
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>Bootstrap</h4>
-                                        <span>Intermediate</span>
-                                    </div>
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>Git</h4>
-                                        <span>Intermediate</span>
-                                    </div>
-                                </div>
+                    <div class="card">
+                        <img src="./assets/img/fruits-money2.png" alt="">
+                        <div class="content-container">
+                            <div class="content">
+                                <span>Web</span>
+                                <h3>Fruits Money</h3>
+                                <a target="_blank" href="https://fruitsmoney.com/" class="project-button">
+                                    <i class="ri-link"></i>
+                                </a>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="skills-area">
-                            <h3>Backend Developer</h3>
-                            <div class="skills-box">
-                                <div class="group">
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>Python</h4>
-                                        <span>Advanced</span>
-                                    </div>
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>Firebase</h4>
-                                        <span>Basic</span>
-                                    </div>
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>MongoDB</h4>
-                                        <span>Intermediate</span>
-                                    </div>
-                                </div>
+                    <div class="card">
+                        <img src="./assets/img/bpens.png" alt="">
+                        <div class="content-container">
+                            <div class="content">
+                                <span>Web</span>
+                                <h3>Botão do Pensamento</h3>
+                                <a target="_blank" href="https://botaodopensamento.vercel.app/" class="project-button">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-                                <div class="group">
-                                    <div class="skill">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <h4>NodeJS</h4>
-                                        <span>Intermediate</span>
-                                    </div>
-                                </div>
+                    <div class="card">
+                        <img src="./assets/img/descontus.png" alt="">
+                        <div class="content-container">
+                            <div class="content">
+                                <span>Web</span>
+                                <h3>Descontus</h3>
+                                <a target="_blank" href="https://descontus.vercel.app/" class="project-button">
+                                    <i class="ri-link"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div id="skills" class="skills">
+                    <div class="skills-area">
+                        <h3>Frontend Developer</h3>
+                        <div class="skills-box">
+                            <div class="group">
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Next.js</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Typescript</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Zustand</h4>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>React.js</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Shadcn</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Tailwind</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-area">
+                        <h3>Backend Developer</h3>
+                        <div class="skills-box">
+                            <div class="group">
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Node.js</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>MySQL</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>MongoDB</h4>
+                                </div>
+                            </div>
+
+                            <div class="group">
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Docker</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Python</h4>
+                                </div>
+                                <div class="skill">
+                                    <i class="ri-checkbox-circle-line"></i>
+                                    <h4>Express.js</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!--=============== FOOTER ===============-->
-        <footer>
-            <div class="wrapper">
-                <span>© Alexandre Koch. All rigths reserved</span>
-            </div>
-        </footer>
+    <!--=============== FOOTER ===============-->
+    <footer>
+        <div class="wrapper">
+            <span>© Alexandre Koch. All rigths reserved</span>
+        </div>
+    </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="./assets/js/scrollreveal.min.js"></script>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="./assets/js/main.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/main.js"></script>
 
-        <!-- <script>
+    <!-- <script>
             window.chatbaseConfig = {
               chatbotId: "zacprl01LRvj8lNxg2VmS",
             }
@@ -278,7 +253,9 @@
             defer>
           </script> -->
 
-<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script src="https://mediafiles.botpress.cloud/2f75246a-41f5-48fd-9c2f-a4914f58c6b3/webchat/config.js" defer></script>
-    </body>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/2f75246a-41f5-48fd-9c2f-a4914f58c6b3/webchat/config.js"
+        defer></script>
+</body>
+
 </html>
